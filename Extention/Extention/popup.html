@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domain Switcher</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 10px;
+            width: 200px;
+        }
+        label {
+            margin-right: 10px;
+        }
+        button {
+            margin-top: 10px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<label>
+    <input type="radio" name="domain" value="localhost:5002" checked> localhost:5002
+</label><br>
+<label>
+    <input type="radio" name="domain" value="test-gomel-erp.holdingbp.ru"> test-gomel-erp.holdingbp.ru
+</label><br>
+<label>
+    <input type="radio" name="domain" value="erp.holdingbp.ru"> erp.holdingbp.ru
+</label><br>
+
+<button id="replaceDomain">Заменить</button>
+
+<script src="popup.js"></script>
+</body>
+</html>
